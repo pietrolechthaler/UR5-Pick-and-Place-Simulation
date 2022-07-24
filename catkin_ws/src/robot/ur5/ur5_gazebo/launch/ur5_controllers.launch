@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Launch file parameters -->
+  <arg name="debug"     default="false" />
+
+  <arg if=      "$(arg debug)"  name="DEBUG" value="screen"/>
+  <arg unless = "$(arg debug)"  name="DEBUG" value="log"/>
+
+  <!-- Controllers config -->
+  <rosparam file="$(find ur5_gazebo)/controller/ur5gripper_controllers.yaml"
+            command="load" />
+
+  <!-- Load controllers -->
+  <node name="robot_controllers" pkg="controller_manager" type="spawner"
+        output="$(arg DEBUG)"
+        args="joint_state_controller trajectory_controller gripper_controller"/>
+
+  <!-- TF -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+    <param name="publish_frequency"  type="double" value="50" />
+  </node>
+
+</launch>

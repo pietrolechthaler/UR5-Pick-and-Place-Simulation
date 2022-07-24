@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <model name="lego_X1-Y4-Z1">
+        <link name="link">
+            <pose>-0.0 -0.0 -0.0 0 0 0</pose>
+            <inertial>
+                <pose>4.81823e-06 -0.000116746 0.000294173 0 0 0</pose>
+                <mass>0.193201</mass>
+                <inertia>
+                    <ixx>0.000304644</ixx>
+                    <ixy>-8.18831e-09</ixy>
+                    <ixz>-1.25295e-08</ixz>
+                    <iyy>4.59847e-05</iyy>
+                    <iyz>-3.16651e-07</iyz>
+                    <izz>0.000303698</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://lego_X1-Y4-Z1/meshes/X1-Y4-Z1.stl</uri>
+                    </mesh>
+                </geometry>
+
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                        <ode>
+                            <mu>0.1</mu>
+                            <mu2>0.1</mu2>
+                            <max_vel>0.01</max_vel>
+                            <min_depth>0.0</min_depth>
+                        </ode>
+                    </contact>
+                    <bounce>
+                        <restitution_coefficient>0</restitution_coefficient>
+                        <threshold>1e+06</threshold>
+                    </bounce>
+                    <friction>
+                        <torsional>
+                            <ode/>
+                        </torsional>
+                        <ode/>
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://lego_X1-Y4-Z1/meshes/X1-Y4-Z1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Grey</name>
+                    </script>
+                    <shader type="vertex">
+                        <normal_map>__default__</normal_map>
+                    </shader>
+                    <ambient>0.3 0.3 0.3 1</ambient>
+                    <diffuse>0.7 0.7 0.7 1</diffuse>
+                    <specular>0.01 0.01 0.01 1</specular>
+                    <emissive>0 0 0 1</emissive>
+                </material>
+            </visual>
+        </link>
+    </model>
+</sdf>

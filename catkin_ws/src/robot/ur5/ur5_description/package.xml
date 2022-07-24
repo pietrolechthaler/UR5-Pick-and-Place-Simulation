@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<package format="2">
+  <name>ur5_description</name>
+  <version>0.1.0</version>
+  <description>
+    URDF description for Universal UR5 robot with a robotiq gripper.
+    The model for the UR5 robot (without gripper) was taken from:
+    https://github.com/ros-industrial/universal_robot.git
+  </description>
+
+  <maintainer email="oramos@utec.edu.pe">Oscar Ramos</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>robotiq_description</exec_depend>
+  
+  <export>
+  </export>
+
+</package>

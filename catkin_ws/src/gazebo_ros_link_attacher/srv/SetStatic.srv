@@ -1,0 +1,5 @@
+string model_name
+string link_name
+bool set_static
+---
+bool ok

@@ -1,0 +1,6 @@
+<launch>
+  <param name="robot_description" textfile="$(find robot_state_publisher)/test/one_link.urdf" />
+  <param name="~use_tf_static" value="true" type="bool" />
+
+  <test test-name="test_subclass" pkg="robot_state_publisher" type="test_subclass" />
+</launch>

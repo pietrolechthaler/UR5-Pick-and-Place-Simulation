@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ur5_gazebo</name>
+  <version>0.0.0</version>
+  <description>
+    Gazebo simulation for the UR5 robot with a robotiq gripper
+  </description>
+
+  <maintainer email="oramos@utec.edu.pe">Oscar Ramos</maintainer>
+  <author email="oramos@utec.edu.pe">Oscar Ramos</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>ur5_description</exec_depend>
+  <exec_depend>robotiq_gazebo</exec_depend>
+
+  <export>
+  </export>
+
+</package>

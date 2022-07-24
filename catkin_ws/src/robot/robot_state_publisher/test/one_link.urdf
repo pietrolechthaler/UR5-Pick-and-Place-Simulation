@@ -1,0 +1,3 @@
+<robot name="test_robot_one_line">
+  <link name="link1" />
+</robot>

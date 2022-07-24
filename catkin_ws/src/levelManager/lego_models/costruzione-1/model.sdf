@@ -1,0 +1,638 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='costruzione-1'>
+    <model name='X1-Y1-Z2'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 -0.00064 0 -0 0</pose>
+          <mass>7.975e-06</mass>
+          <inertia>
+            <ixx>3.1065e-09</ixx>
+            <ixy>2.7e-15</ixy>
+            <ixz>-2.403e-13</ixz>
+            <iyy>3.1066e-09</iyy>
+            <iyz>-2.21e-14</iyz>
+            <izz>1.97979e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Indigo</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-0.062873 -0.018457 -0.028843 0 -0 0</pose>
+    </model>
+    <model name='X1-Y1-Z2_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 -0.00064 0 -0 0</pose>
+          <mass>7.975e-06</mass>
+          <inertia>
+            <ixx>3.1065e-09</ixx>
+            <ixy>2.7e-15</ixy>
+            <ixz>-2.403e-13</ixz>
+            <iyy>3.1066e-09</iyy>
+            <iyz>-2.21e-14</iyz>
+            <izz>1.97979e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Indigo</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-0.063089 -0.019067 0.010887 0 -0 0</pose>
+    </model>
+    <model name='X1-Y1-Z2_1'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 -0.00064 0 -0 0</pose>
+          <mass>7.975e-06</mass>
+          <inertia>
+            <ixx>3.1065e-09</ixx>
+            <ixy>2.7e-15</ixy>
+            <ixz>-2.403e-13</ixz>
+            <iyy>3.1066e-09</iyy>
+            <iyz>-2.21e-14</iyz>
+            <izz>1.97979e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Indigo</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.093033 0.019198 0.008715 0 -0 0</pose>
+    </model>
+    <model name='X1-Y1-Z2_2'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 -0.00064 0 -0 0</pose>
+          <mass>7.975e-06</mass>
+          <inertia>
+            <ixx>3.1065e-09</ixx>
+            <ixy>2.7e-15</ixy>
+            <ixz>-2.403e-13</ixz>
+            <iyy>3.1066e-09</iyy>
+            <iyz>-2.21e-14</iyz>
+            <izz>1.97979e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Indigo</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.09278 0.019284 -0.028843 0 -0 0</pose>
+    </model>
+    <model name='X1-Y2-Z2-CHAMFER'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0.004888 -0.00392 0 -0 0</pose>
+          <mass>1.18134e-05</mass>
+          <inertia>
+            <ixx>7.114e-09</ixx>
+            <ixy>-5.32e-14</ixy>
+            <ixz>-1.824e-13</ixz>
+            <iyy>4.36e-09</iyy>
+            <iyz>-1.078e-09</iyz>
+            <izz>5.925e-09</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-0.034095 -0.030629 -0.028843 0 -0 0</pose>
+    </model>
+    <model name='X1-Y3-Z2'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.000633 0 -0 0</pose>
+          <mass>2.12622e-05</mass>
+          <inertia>
+            <ixx>2.43707e-08</ixx>
+            <ixy>-4.3e-14</ixy>
+            <ixz>-2.7e-14</ixz>
+            <iyy>8.5755e-09</iyy>
+            <iyz>1.8e-14</iyz>
+            <izz>2.14272e-08</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y3-Z2/meshes/X1-Y3-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/SkyBlue</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y3-Z2/meshes/X1-Y3-Z2.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-0.004449 0.015163 -0.028843 0 -0 0</pose>
+    </model>
+    <model name='X1-Y4-Z1'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 -0.00013 0.00028 0 -0 0</pose>
+          <mass>1.929e-05</mass>
+          <inertia>
+            <ixx>3.041e-08</ixx>
+            <ixy>1e-14</ixy>
+            <ixz>4e-14</ixz>
+            <iyy>4.592e-09</iyy>
+            <iyz>-2.67e-11</iyz>
+            <izz>3.0317e-08</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y4-Z1/meshes/X1-Y4-Z1.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Indigo</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X1-Y4-Z1/meshes/X1-Y4-Z1.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.044928 0.018417 0.0368 0 0 -1.53118</pose>
+    </model>
+    <model name='X2-Y2-Z2-FILLET'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>3.8e-05 0.0035 -0.0021 0 -0 0</pose>
+          <mass>2.2336e-05</mass>
+          <inertia>
+            <ixx>1.43854e-08</ixx>
+            <ixy>-1.0468e-11</ixy>
+            <ixz>-2.1942e-11</ixz>
+            <iyy>1.5135e-08</iyy>
+            <iyz>-1.6187e-09</iyz>
+            <izz>1.896e-08</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/FlatBlack</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-0.019185 -0.000737 0.009914 0 -0 0</pose>
+    </model>
+    <model name='X2-Y2-Z2-FILLET_0'>
+      <static>0</static>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>3.8e-05 0.0035 -0.0021 0 -0 0</pose>
+          <mass>2.2336e-05</mass>
+          <inertia>
+            <ixx>1.43854e-08</ixx>
+            <ixy>-1.0468e-11</ixy>
+            <ixz>-2.1942e-11</ixz>
+            <iyy>1.5135e-08</iyy>
+            <iyz>-1.6187e-09</iyz>
+            <izz>1.896e-08</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/FlatBlack</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-0.047051 -0.003172 0.049053 0 -0 0</pose>
+    </model>
+    <joint name='link_JOINT_0' type='fixed'>
+      <parent>X1-Y1-Z2_0::link</parent>
+      <child>X2-Y2-Z2-FILLET_0::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_2' type='fixed'>
+      <parent>X1-Y1-Z2::link</parent>
+      <child>X1-Y1-Z2_0::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_5' type='fixed'>
+      <parent>X1-Y1-Z2_1::link</parent>
+      <child>X1-Y1-Z2_2::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_6' type='fixed'>
+      <parent>X1-Y1-Z2_1::link</parent>
+      <child>X1-Y4-Z1::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_3' type='fixed'>
+      <parent>X1-Y2-Z2-CHAMFER::link</parent>
+      <child>X2-Y2-Z2-FILLET::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_4' type='fixed'>
+      <parent>X1-Y3-Z2::link</parent>
+      <child>X2-Y2-Z2-FILLET::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_1' type='fixed'>
+      <parent>X2-Y2-Z2-FILLET::link</parent>
+      <child>X2-Y2-Z2-FILLET_0::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_JOINT_7' type='fixed'>
+      <parent>X2-Y2-Z2-FILLET::link</parent>
+      <child>X1-Y4-Z1::link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="_spawn">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      
+    </link>
+  </model>
+</sdf>

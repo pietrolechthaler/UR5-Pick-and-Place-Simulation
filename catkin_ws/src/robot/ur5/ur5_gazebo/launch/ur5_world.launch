@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Export env variable so that gazebo finds our models -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="$(optenv GAZEBO_MODEL_PATH):$(find levelManager)/models:$(find levelManager)/lego_models" />
+  
+  <!-- Launch file parameters -->
+  <arg name="paused"     default="true"/>
+  <arg name="debug"      default="false"/>
+  <arg name="gui"        default="true"/>
+  <arg name="rate"       default="125" />
+  <arg name="world_name" default="$(find levelManager)/worlds/main_scene.world" />
+  
+  <!-- Start up simulated world -->
+   <include file="$(find ur5_gazebo)/launch/ur5_setup.launch">
+    <arg name="world_name"  value="$(find ur5_gazebo)/worlds/ur5_world.world"/>
+    <arg name="paused"     value="$(arg paused)"/>
+    <arg name="debug"      value="$(arg debug)"/>
+    <arg name="gui"        value="$(arg gui)"/>
+  </include>
+
+   <!-- Start Level Manager -->
+  <node pkg="levelManager" name="levelManager" type="levelManager.py" output="screen" />
+  
+</launch>

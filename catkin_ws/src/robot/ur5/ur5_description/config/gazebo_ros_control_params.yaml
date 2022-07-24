@@ -1,0 +1,34 @@
+/gazebo_ros_control:
+  pid_gains:
+    shoulder_pan_joint:
+      p: 2500.0
+      i: 0.2
+      d: 100.0
+      i_clamp: 10
+    shoulder_lift_joint:
+      p: 10000
+      i: 10
+      d: 100.0
+      i_clamp: 100
+    elbow_joint:
+      p: 10000
+      i: 10
+      d: 50.0
+      i_clamp: 100
+    wrist_1_joint:
+      p: 1000.0
+      i: 0.2
+      d: 25.0
+      i_clamp: 0
+    wrist_2_joint:
+      p: 1000.0
+      i: 0.7
+      d: 25.0
+      i_clamp: 5
+    wrist_3_joint:
+      p: 1000.0
+      i: 0.7
+      d: 25.5
+      i_clamp: 5
+    robotiq_85_left_knuckle_joint:
+      p: 100.0

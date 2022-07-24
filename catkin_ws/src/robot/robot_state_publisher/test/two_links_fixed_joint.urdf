@@ -1,0 +1,10 @@
+<robot name="test_robot_fixed_joint">
+  <link name="link1" />
+  <link name="link2" />
+
+  <joint name="joint1" type="fixed">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="5 0 0" rpy="0 0 1.57" />
+  </joint>
+</robot>

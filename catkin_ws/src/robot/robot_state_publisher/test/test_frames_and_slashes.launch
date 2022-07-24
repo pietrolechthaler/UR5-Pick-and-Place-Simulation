@@ -1,0 +1,197 @@
+<launch>
+
+  <param name="robot_description"
+       textfile="$(find robot_state_publisher)/test/frames_and_slashes.urdf" />
+
+  <group ns="/test_case_1">
+    <param name="tf_prefix" value=""/>
+    <param name="expected_name_link_1" value="link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="link4/"/>
+    <param name="expected_name_link_5" value="link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="li/nk12"/>
+    <param name="expected_name_link_13" value="li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_empty_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_2">
+    <param name="tf_prefix" value="foo"/>
+    <param name="expected_name_link_1" value="foo/link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="foo/link4/"/>
+    <param name="expected_name_link_5" value="foo/link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="foo/li/nk12"/>
+    <param name="expected_name_link_13" value="foo/li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_foo_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_3">
+    <param name="tf_prefix" value="foo/"/>
+    <param name="expected_name_link_1" value="foo//link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="foo//link4/"/>
+    <param name="expected_name_link_5" value="foo//link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="foo//li/nk12"/>
+    <param name="expected_name_link_13" value="foo//li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_foo_slash_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_4">
+    <param name="tf_prefix" value="/foo"/>
+    <param name="expected_name_link_1" value="foo/link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="foo/link4/"/>
+    <param name="expected_name_link_5" value="foo/link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="foo/li/nk12"/>
+    <param name="expected_name_link_13" value="foo/li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_slash_foo_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_5">
+    <param name="tf_prefix" value="//foo"/>
+    <param name="expected_name_link_1" value="/foo/link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="/foo/link4/"/>
+    <param name="expected_name_link_5" value="/foo/link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="/foo/li/nk12"/>
+    <param name="expected_name_link_13" value="/foo/li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_slash_slash_foo_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_6">
+    <param name="tf_prefix" value="foo//"/>
+    <param name="expected_name_link_1" value="foo///link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="foo///link4/"/>
+    <param name="expected_name_link_5" value="foo///link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="foo///li/nk12"/>
+    <param name="expected_name_link_13" value="foo///li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_foo_slash_slash_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_7">
+    <param name="tf_prefix" value="fo/o"/>
+    <param name="expected_name_link_1" value="fo/o/link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="fo/o/link4/"/>
+    <param name="expected_name_link_5" value="fo/o/link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="fo/o/li/nk12"/>
+    <param name="expected_name_link_13" value="fo/o/li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_fo_slash_o_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+
+  <group ns="/test_case_8">
+    <param name="tf_prefix" value="/"/>
+    <param name="expected_name_link_1" value="/link1"/>
+    <param name="expected_name_link_2" value="link2"/>
+    <param name="expected_name_link_3" value="/link3"/>
+    <param name="expected_name_link_4" value="/link4/"/>
+    <param name="expected_name_link_5" value="/link5//"/>
+    <param name="expected_name_link_6" value="link6/"/>
+    <param name="expected_name_link_7" value="/link7/"/>
+    <param name="expected_name_link_8" value="link8//"/>
+    <param name="expected_name_link_9" value="/link9//"/>
+    <param name="expected_name_link_10" value="/li/nk10//"/>
+    <param name="expected_name_link_11" value="/li//nk11//"/>
+    <param name="expected_name_link_12" value="/li/nk12"/>
+    <param name="expected_name_link_13" value="/li//nk13"/>
+
+    <remap from="/tf" to="tf"/>
+    <remap from="/tf_static" to="tf_static"/>
+    <remap from="robot_description" to="/robot_description"/>
+
+    <node pkg="robot_state_publisher" name="frames_and_slashes_pub" type="robot_state_publisher" output="screen" />
+    <test test-name="test_slash_prefix" pkg="robot_state_publisher" type="test_frames_and_slashes" />
+  </group>
+</launch>

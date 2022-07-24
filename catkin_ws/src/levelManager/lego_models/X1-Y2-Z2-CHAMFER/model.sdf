@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="X1-Y2-Z2-CHAMFER">
+    <static>false</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0e-02 0.4888e-02 -0.392e-02</pose>
+        <mass>11.813372e-6</mass>
+        <inertia>
+          <ixx>71.14e-10</ixx>
+          <ixy>-0.000532e-10</ixy>
+          <ixz>-0.001824e-10</ixz>
+          <iyy>43.6e-10</iyy>
+          <iyz>-10.78e-10</iyz>
+          <izz>59.25e-10</izz>
+        </inertia>
+      </inertial>
+      
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

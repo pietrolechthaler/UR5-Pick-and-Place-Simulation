@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" textfile="$(find robot_state_publisher)/test/one_link.urdf" />
+
+  <test test-name="test_default_constructor" pkg="robot_state_publisher" type="test_default_constructor" />
+</launch>

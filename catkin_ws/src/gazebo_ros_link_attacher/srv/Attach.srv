@@ -1,0 +1,6 @@
+string model_name_1
+string link_name_1
+string model_name_2
+string link_name_2
+---
+bool ok

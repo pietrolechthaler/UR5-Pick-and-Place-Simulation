@@ -1,0 +1,76 @@
+<robot name="frames_and_slashes">
+  <link name="link1" />
+  <link name="/link2" />
+  <link name="//link3" />
+  <link name="link4/" />
+  <link name="link5//" />
+  <link name="/link6/" />
+  <link name="//link7/" />
+  <link name="/link8//" />
+  <link name="//link9//" />
+  <link name="//li/nk10//" />
+  <link name="//li//nk11//" />
+  <link name="li/nk12" />
+  <link name="li//nk13" />
+
+  <joint name="joint2" type="fixed">
+    <parent link="link1"/>
+    <child link="/link2"/>
+    <origin xyz="2 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint3" type="fixed">
+    <parent link="link1"/>
+    <child link="//link3"/>
+    <origin xyz="3 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint4" type="fixed">
+    <parent link="link1"/>
+    <child link="link4/"/>
+    <origin xyz="4 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint5" type="fixed">
+    <parent link="link1"/>
+    <child link="link5//"/>
+    <origin xyz="5 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint6" type="fixed">
+    <parent link="link1"/>
+    <child link="/link6/"/>
+    <origin xyz="6 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint7" type="fixed">
+    <parent link="link1"/>
+    <child link="//link7/"/>
+    <origin xyz="7 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint8" type="fixed">
+    <parent link="link1"/>
+    <child link="/link8//"/>
+    <origin xyz="8 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint9" type="fixed">
+    <parent link="link1"/>
+    <child link="//link9//"/>
+    <origin xyz="9 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint10" type="fixed">
+    <parent link="link1"/>
+    <child link="//li/nk10//"/>
+    <origin xyz="10 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint11" type="fixed">
+    <parent link="link1"/>
+    <child link="//li//nk11//"/>
+    <origin xyz="11 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint12" type="fixed">
+    <parent link="link1"/>
+    <child link="li/nk12"/>
+    <origin xyz="12 0 0" rpy="0 0 1.57" />
+  </joint>
+  <joint name="joint13" type="fixed">
+    <parent link="link1"/>
+    <child link="li//nk13"/>
+    <origin xyz="13 0 0" rpy="0 0 1.57" />
+  </joint>
+</robot>

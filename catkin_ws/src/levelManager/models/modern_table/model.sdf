@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="modern_table">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0.74 0 0 0</pose>
+
+      <collision name="surface">
+        <pose>0 0 -0.015 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.35 1 0.03</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://modern_table/meshes/modern_table.dae</uri>
+          </mesh>
+        </geometry>
+        <light type="directional" name="some_light">
+          <diffuse>0.7 0.7 0.7 0</diffuse>
+          <specular>1 1 1 0</specular>
+          <direction>-1 -1 -1</direction>
+        </light>
+      </visual>
+    </link>
+  </model>
+</sdf>

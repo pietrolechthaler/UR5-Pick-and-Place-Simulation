@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Export env variable so that gazebo finds our models -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="$(optenv GAZEBO_MODEL_PATH):$(find levelManager)/models:$(find levelManager)/lego_models" />
+  
+  <!-- Launch file parameters -->
+  <arg name="paused"     default="true"/>
+  <arg name="debug"      default="false"/>
+  <arg name="gui"        default="true"/>
+  <arg name="rate"       default="125" />
+  <arg name="world_name" default="$(find levelManager)/worlds/main_scene.world" />
+  
+  <!-- Start up simulated world -->
+   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+    <arg name="paused"     value="$(arg paused)"/>
+    <arg name="debug"      value="$(arg debug)"/>
+    <arg name="gui"        value="$(arg gui)"/>
+  </include>
+
+  <!-- Send robot urdf to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur5_description)/urdf/ur5_robotiq85_gripper.urdf.xacro'" />
+  <!-- Spawn robot in gazebo (and move it upwards):
+       better initial values should be -2.355 and 1.57 but the robot does
+       something strange when unpausing it
+  -->
+
+<!-- Enable PID -->
+  <rosparam file="$(find ur5_description)/config/gazebo_ros_control_params.yaml" />
+  
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model"
+        args="-urdf -param robot_description -model robot -z 0.743487 -Y -3.1415926535 -P 0.0 -R 0.0 
+                  -J shoulder_pan_joint -1.58 
+                  -J shoulder_lift_joint -1.58
+                  -J elbow_joint -1.58 
+                  -J wrist_1_joint -1.58 
+                  -J wrist_2_joint 1.58 
+                  -J wrist_3_joint 1.58"
+        output="screen" />
+
+  <!-- Spawn Work surface -->
+  <!--<node name="spawn_work_surface" pkg="gazebo_ros" type="spawn_model"
+        args="-sdf -file $(arg sdf_robot_file) -model work_table -x 0 -y -0.558 -z 0 -Y -3.1415926535"
+  output="screen" />-->
+
+  <include file="$(find ur5_gazebo)/launch/ur5_controllers.launch" />
+
+
+  <!-- Start Level Manager -->
+  <node pkg="levelManager" name="levelManager" type="levelManager.py" output="screen" />
+
+</launch>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="X2-Y2-Z2-FILLET">
+    <static>false</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.00379e-02 0.35e-02 -0.21e-02</pose>
+        <mass>22.336e-6</mass>
+        <inertia>
+          <ixx>143.8544e-10</ixx>
+          <ixy>-0.10468e-10</ixy>
+          <ixz>-0.21942e-10</ixz>
+          <iyy>151.35e-10</iyy>
+          <iyz>-16.18699e-10</iyz>
+          <izz>189.6e-10</izz>
+        </inertia>
+      </inertial>
+      
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

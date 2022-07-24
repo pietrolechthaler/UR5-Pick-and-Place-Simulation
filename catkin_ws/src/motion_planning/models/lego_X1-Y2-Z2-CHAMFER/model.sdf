@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <model name="lego_X1-Y2-Z2-CHAMFER">
+        <link name="link">
+            <pose>-0.0 -0.0 -0.0 0 0 0</pose>
+            <inertial>
+                <pose>2.77923e-06 0.00488715 -0.00392412 0 0 0</pose>
+                <mass>0.118122</mass>
+                <inertia>
+                    <ixx>7.11254e-05</ixx>
+                    <ixy>-2.81765e-09</ixy>
+                    <ixz>-6.76974e-09</ixz>
+                    <iyy>4.35864e-05</iyy>
+                    <iyz>-1.07802e-05</iyz>
+                    <izz>5.92481e-05</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://lego_X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+                    </mesh>
+                </geometry>
+
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                        <ode>
+                            <mu>0.1</mu>
+                            <mu2>0.1</mu2>
+                            <max_vel>0.01</max_vel>
+                            <min_depth>0.0</min_depth>
+                        </ode>
+                    </contact>
+                    <bounce>
+                        <restitution_coefficient>0</restitution_coefficient>
+                        <threshold>1e+06</threshold>
+                    </bounce>
+                    <friction>
+                        <torsional>
+                            <ode/>
+                        </torsional>
+                        <ode/>
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://lego_X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Grey</name>
+                    </script>
+                    <shader type="vertex">
+                        <normal_map>__default__</normal_map>
+                    </shader>
+                    <ambient>0.3 0.3 0.3 1</ambient>
+                    <diffuse>0.7 0.7 0.7 1</diffuse>
+                    <specular>0.01 0.01 0.01 1</specular>
+                    <emissive>0 0 0 1</emissive>
+                </material>
+            </visual>
+        </link>
+    </model>
+</sdf>
