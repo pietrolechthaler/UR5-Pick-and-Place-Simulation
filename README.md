@@ -1,10 +1,7 @@
 <p align="center">
   <h2 align="center">UR5 Pick and Place Simulation in Ros/Gazebo</h2>
 
-  <p align="center">
-  Exam project for Fundamental of Robotics
-  <br>University of Trento - Prof. <a href="https://webapps.unitn.it/du/it/Persona/PER0002392/Curriculum">Luigi Palopoli</a> and <a href="https://webapps.unitn.it/du/it/Persona/PER0051994/Curriculum">Niculae Sebe</a>
-  </p>
+  
 </p>
 <br>
 
@@ -96,9 +93,9 @@ rosrun vision vision.py -show
 
 ### Contributors
 
-| Name                 | Matricola | Github                               |
-|----------------------|-----------|--------------------------------------|
-| Davice Cerpelloni    | 213541    | https://github.com/davidecerpelloni  |
-| Leonardo Collizzolli | 209316    | https://github.com/leocolliz         |
-| Pietro Lechthaler    | 210601    | https://github.com/pietrolechthaler  |
-| Stefano Rizzi        | 209684    | https://github.com/StefanoRizzi      |
+| Name                 | Github                               |
+|----------------------|--------------------------------------|
+| Davice Cerpelloni    | https://github.com/davidecerpelloni  |
+| Leonardo Collizzolli | https://github.com/leocolliz         |
+| Pietro Lechthaler    | https://github.com/pietrolechthaler  |
+| Stefano Rizzi        | https://github.com/StefanoRizzi      |
